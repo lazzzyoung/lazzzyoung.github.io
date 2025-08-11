@@ -55,7 +55,18 @@ exports.JavaScriptList = [
   "JavaScript/plz-answer",
 ];
 
-exports.DailyCodingList = [
+exports.JavaList = []
+
+exports.PythonList = [
+  "Python/make-hobbycoding",
+  "Python/make-jaystagram",
+  "Python/python-set-environments",
+  "Python/python-startkit",
+  "Python/python",
+];
+exports.SQLList = []
+
+exports.DailyAlgorithmList = [
   "Daily-Coding/191120-two-sum",
   "Daily-Coding/191119-remove-duplicates-from-sorted-array",
   "Daily-Coding/180110-recursion-davis-staircase",
@@ -88,87 +99,21 @@ exports.DailyCodingList = [
   "Daily-Coding/unique-in-order",
 ];
 
-exports.ReactList = [
-  "React/next-js.md",
-  "React/react-ts-storybook.md",
-  "React/flux",
-  "React/react-testing",
-  "React/react",
-  "React/redux-saga",
-  "React/redux",
-  "React/hook",
-  "React/render-props",
-  "React/high-order-component",
-  "React/react-component",
-  "React/context",
+exports.GitList = [
+  "Git/git-guide",
+  "Git/git-ignore",
+  "Git/git-reverse-commit",
+  "Git/pro-git",
+  "Git/rebase-with-sourcetree",
+  "Git/trouble-shooting-on-console",
+  "Git/rebase-vs-merge-commit",
+  "Git/revert-certain-file",
 ];
 
-exports.AngularList = [
-  "Angular/angularjs-moment-filter",
-  "Angular/angularjs",
-  "Angular/api",
-];
+exports.NetworkList = ["Network/ssh-tunneling"];
 
-exports.JsTestingList = [
-  "Javascript-Testing/casperjs",
-  "Javascript-Testing/passing-arguments-with-casperjs",
-  "Javascript-Testing/trouble-shooting",
-];
+exports.DevOpsList = ["DevOps/docker.md", "DevOps/vupress-github-actions.md"];
 
-exports.CSSList = [
-  "CSS/100-percent-height-colums-fixed-sidebar-with-pure-css",
-  "CSS/css-block-inline-block-vertical-align",
-  "CSS/css-overlay",
-  "CSS/css-property-order",
-  "CSS/emmet",
-  "CSS/flexbox",
-  "CSS/flickering-css-transition",
-  "CSS/make-border-smaller-than-div-length",
-  "CSS/markup-level-test",
-  "CSS/nth-child-vs-nth-of-type",
-  "CSS/web-font",
-  "CSS/styled-components",
-];
-
-exports.GoogleAnalyticsList = [
-  "Google-Analytics/GA-tag-manager",
-  "Google-Analytics/data-analytics",
-  "Google-Analytics/ecommerce-in-google-analytics-and-tagmanager",
-  "Google-Analytics/ecommerce-in-google-analytics",
-  "Google-Analytics/enhanced-ecommerce-in-google-analytics",
-  "Google-Analytics/enhanced-ecommerce-in-tagmanager",
-  "Google-Analytics/google-analytics-data-layer",
-  "Google-Analytics/google-analytics-terminology",
-  "Google-Analytics/google-analytics",
-  "Google-Analytics/make-multiple-categories-in-ga",
-  "Google-Analytics/Gaekoboard_guide",
-];
-
-exports.DataStructureAndAlgorithmList = [
-  "Data-structure-and-Algorithm/khan-algorithm",
-];
-exports.DjangoList = [
-  "Django/digging-into-django",
-  "Django/django-aggregation",
-  "Django/django-bower-grunt",
-  "Django/django-cache",
-  "Django/django-migration-conflict",
-  "Django/django-models",
-  "Django/django-pinkfong-tv",
-  "Django/django-queries",
-  "Django/django-resize-image",
-  "Django/django-seperate-settings-and-secret-file",
-  "Django/django-social-auth-add-profile-page",
-  "Django/django-social-auth",
-  "Django/django-url",
-  "Django/django",
-  "Django/djnago-admin",
-  "Django/extend-django-user-model",
-  "Django/how-to-response-template-in-django",
-  "Django/pass-data-through-redirect-in-django",
-  "Django/react-with-django-rest-framework",
-  "Django/two-scoops-of-django",
-];
 exports.ETCList = [
   "ETC/amplitude",
   "ETC/beer",
@@ -207,73 +152,5 @@ exports.ETCList = [
   "ETC/career-ladders",
   "ETC/becoming-senior",
 ];
-exports.GitList = [
-  "Git/git-guide",
-  "Git/git-ignore",
-  "Git/git-reverse-commit",
-  "Git/pro-git",
-  "Git/rebase-with-sourcetree",
-  "Git/trouble-shooting-on-console",
-  "Git/rebase-vs-merge-commit",
-  "Git/revert-certain-file",
-];
-exports.BundlerList = ["Bundler/grunt", "Bundler/webpack"];
 
-exports.MarkUpList = [
-  "Markup/icon-font",
-  "Markup/HTML5-2015-next",
-  "Markup/HTML5",
-  "Markup/RWD",
-  "Markup/css-animation",
-  "Markup/css",
-  "Markup/delete-inline-block-unexpected-gap",
-  "Markup/html-label-mdn-translation",
-  "Markup/html5-boilerplate",
-  "Markup/interactive-web-design",
-  "Markup/responsive-iframe-embed",
-  "Markup/scrolling-error-in-ios-when-fixed-element-focus",
-  "Markup/svg",
-  "Markup/wsconf-2016",
-  "Markup/youtube-thumbnail-crop",
-];
-exports.NetworkList = ["Network/ssh-tunneling"];
-exports.PythonList = [
-  "Python/make-hobbycoding",
-  "Python/make-jaystagram",
-  "Python/python-set-environments",
-  "Python/python-startkit",
-  "Python/python",
-];
-
-exports.DevOpsList = ["DevOps/docker.md", "DevOps/vupress-github-actions.md"];
-
-exports.MILList = [
-  "MIL/mil-2108.md",
-  "MIL/mil-2107.md",
-  "MIL/mil-2106.md",
-  "MIL/mil-2106.md",
-  "MIL/mil-2104.md",
-  "MIL/mil-2103.md",
-  "MIL/mil-2102.md",
-  "MIL/mil-2101.md",
-  "MIL/mil-2011-2012.md",
-  "MIL/mil-2010.md",
-  "MIL/mil-2009.md",
-  "MIL/mil-2008.md",
-  "MIL/mil-1911.md",
-];
-
-exports.BooksList = [
-  "Books/책조각들",
-  "Books/210926-lean-anlytics",
-  "Books/210727-일주일은-금요일부터-시작하라",
-  "Books/210516-자기만의방",
-  "Books/210515-아무튼달리기",
-  "Books/210514-아무튼술",
-  "Books/210312-적게자도괜찮습니다",
-  "Books/210220-가짜감정",
-  "Books/210210-feedforward",
-  "Books/210120-radical-candor",
-  "Books/210101-clean-code",
-  "Books/210122-1일1명상1평온.md",
-];
+// exports.BundlerList = ["Bundler/grunt", "Bundler/webpack"];

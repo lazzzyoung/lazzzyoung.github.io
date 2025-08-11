@@ -6,16 +6,21 @@
       </h1>
 
       <div class="infoContainer">
-        <div class="name">Jay Jin's TIL</div>
+        <div class="name">lazzzyoung's TIL</div>
         <ul>
+          
+          
           <li>
-            <a href="https://milooy.wordpress.com/">Blog</a>
+            <a href="https://www.instagram.com/young___x96/">Instargram</a>
           </li>
           <li>
-            <a href="https://github.com/milooy">GitHub</a>
+            <a href="https://soundcloud.com/humo1">SoundCloud</a>
           </li>
-          <li>
-            <a href="https://soundcloud.com/hellojayjin">SoundCloud</a>
+          <li class="contactText">
+            Phone | 010 - 4189 - 7199
+          </li>
+          <li class="contactText">
+            Email | tang0923@khu.ac.kr
           </li>
         </ul>
       </div>
@@ -29,13 +34,18 @@
 <style>
 @import "https://fonts.googleapis.com/css?family=Gugi";
 
+.contactText {
+  color: #4FAE7A; 
+  font-weight: 500;
+}
+
 .infoContainer {
   text-align: right;
 }
 h1 {
   font-family: "Gugi", cursive;
   font-weight: 500;
-  border-bottom: 17px solid #ffd816;
+  border-bottom: 17px solid #5dbf89;
   word-break: keep-all;
   font-size: 5rem;
 }
