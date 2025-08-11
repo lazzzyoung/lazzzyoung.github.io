@@ -1,54 +1,16 @@
-# name: Build and Deploy
-# on: [push]
-# jobs:
-#   build-and-deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: Checkout
-#       uses: actions/checkout@main
-
-#     - name: Vuepress deploy
-#       uses: jenkey2011/vuepress-deploy@1.0.1
-#       env:
-#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-#         BUILD_SCRIPT: yarn && yarn build
-#         TARGET_BRANCH: gh-pages
-#         BUILD_DIR: build/
-
-
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]  # main 푸시마다 자동 배포
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
+name: Build and Deploy
+on: [push]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .vuepress/dist   # VuePress 산출물 경로
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    steps:
-      - uses: actions/deploy-pages@v4
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Vuepress deploy
+      uses: jenkey2011/vuepress-deploy@1.0.1
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_SCRIPT: yarn && yarn build
+        TARGET_BRANCH: gh-pages
+        BUILD_DIR: build/
