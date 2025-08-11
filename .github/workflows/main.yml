@@ -1,16 +1,27 @@
 name: Build and Deploy
-on: [push]
+
+on:
+  push:
+    branches: [ master, main ]   # main에 push될 때마다 배포. 브랜치 쓰면 여길 바꿔.
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@main
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Vuepress deploy
-      uses: jenkey2011/vuepress-deploy@1.0.1
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BUILD_SCRIPT: yarn && yarn build
-        TARGET_BRANCH: gh-pages
-        BUILD_DIR: build/
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Vuepress deploy
+        uses: jenkey2011/vuepress-deploy@1.0.1
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_SCRIPT: yarn && yarn build
+          TARGET_BRANCH: gh-pages
+          # VuePress 산출물 경로. 기본은 .vuepress/dist
+          BUILD_DIR: build
