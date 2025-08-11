@@ -33,6 +33,9 @@ module.exports = {
         title: 'SQL',
         children: CONST.SQLList
       }, {
+        title: 'Vive Coding',
+        // children: CONST.ViveCodingList
+      }, {
         title: 'Daily Algorithm',
         // children: CONST.DailyAlgorithmList
       }, {
